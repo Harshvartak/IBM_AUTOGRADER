@@ -6,7 +6,7 @@ IBM/autograder/migrations/
 IBM/autograder/migrations/__pycache__/
 IBM/IBM/__pycache__/
 __pycache__/
-
+IBM\autograder\autograder\autograder\model.pt
 media
 
 # Distribution / packaging
