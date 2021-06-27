@@ -8,7 +8,16 @@ from rest_framework.response import Response
 import sys
 
 from .autograder.autograder.t5_autograder import *
+from .autograder.autograder.svm import *
 
+def myfunc(text,ref_ans1,model1):
+    score1=find_correctness(text,ref_ans1,model1)
+    score2=find_correctness_svm(text,ref_ans1)
+    avg_score=(score1+score2)/2
+    if score1 == 5.0:
+        return score1
+    else:
+        return avg_score
 
 
 # Create your views here.
@@ -22,14 +31,13 @@ class EssayGradeView(CreateAPIView):
             
             text=request.data['text']
             ref_ans1=request.data['ref_Ans1']
-            score=find_correctness(text,ref_ans1,model)
+            score=myfunc(text,ref_ans1,model)
             
             request.data['score']=score
             serializer=self.get_serializer(data=request.data)
             #print(request.data['score'])
             if serializer.is_valid():
                 self.perform_create(serializer)
-                print(request.data['score'])
                 return Response({'status':True,'score':score},status=status.HTTP_200_OK)
             else:
                 return Response(serializer.errors,status=status.HTTP_200_OK)

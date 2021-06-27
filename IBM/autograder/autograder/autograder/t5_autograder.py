@@ -31,7 +31,11 @@ def find_correctness(sA, rA1,model, rA2="", rA3=""):
 	    scores.append(float(tokenizer.decode(output[0], skip_special_tokens=True)))
 
 	max_score = max(scores)
-	if max_score >= 2:
-		return "CORRECT"
+
+	return max_score
+	'''
+		if max_score >= 2:
+    		return "CORRECT"
 	else:
 		return "INCORRECT"
+	'''
