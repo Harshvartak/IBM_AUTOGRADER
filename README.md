@@ -38,7 +38,7 @@ The model could not be uploaded on Github directly due to file size restrictions
   python3 manage.py migrate
   python3 manage.py runserver
 ```
-Addidionally, one may require to install [Rust Compiler](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe) for one of the dependency fpr Windows and certain versions of pip
+Addidionally, one may require to install [Rust Compiler](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe) for one of the dependency for Windows and certain versions of pip
 
 ## Developers         
 1. Harsh Vartak (60004180028)
