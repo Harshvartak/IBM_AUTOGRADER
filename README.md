@@ -38,11 +38,10 @@ The model could not be uploaded on Github directly due to file size restrictions
   python3 manage.py migrate
   python3 manage.py runserver
 ```
-Addidionally, one may require to install [Rust Compiler](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe) for one of the dependency for Windows and certain versions of pip
 
-<br>
-In the autograder folder file called <b><i>t_5autograder.py</i></b>, one must put absolute paths of <i>model.pt</i>(file in drive link above) and <i>spiece.model</i> for the backend to detect both the models, failure to do may result in torch to be unable to detect the result, this is a dependency due to pickle picking relative paths, unable to find files in a directory due to some issue
-<br>
+#### Things to be noted
+- Addidionally, one may require to install [Rust Compiler](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe) for one of the dependency for Windows and certain versions of pip
+- In the autograder folder file called <b><i>t_5autograder.py</i></b>, one must put absolute paths of <i>model.pt</i>(file in drive link above) and <i>spiece.model</i> for the backend to detect both the models, failure to do may result in torch to be unable to detect the result, this is a dependency due to pickle picking relative paths, unable to find files in a directory due to some issue
 
 ## Developers         
 1. Harsh Vartak (60004180028)
