@@ -44,9 +44,9 @@ The model could not be uploaded on Github directly due to file size restrictions
 - In the autograder folder file called <b><i>t_5autograder.py</i></b>, one must put absolute paths of <i>model.pt</i>(file in drive link above) and <i>spiece.model</i> for the backend to detect both the models, failure to do may result in torch to be unable to detect the result, this is a dependency due to pickle picking relative paths, unable to find files in a directory due to some issue
 
 ## Developers         
-1. Harsh Vartak (60004180028)
-2. Kanishk Shah (60004180042)
-3. Govind Thakur (60004180024)
+1. Govind Thakur (60004180024)
+2. Harsh Vartak (60004180028)
+3. Kanishk Shah (60004180042)
 4. Manali Maniyar (60004180048)
 5. Naman Dangi (60004180056)
 6. Onkar Thorat (60004180067)
