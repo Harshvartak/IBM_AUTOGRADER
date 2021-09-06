@@ -24,10 +24,10 @@ The model could not be uploaded on Github directly due to file size restrictions
 - Django 3.0+ (Python 3.6+)
 - Django REST Framework (3.10+)
 - PyTorch (1.9.0)
-- Numpy
-- NLTK
-- Spacy
-- Tenserflow
+- NumPy
+- nltk
+- spaCy
+- TensorFlow
 
 ## Build Instructions
 
